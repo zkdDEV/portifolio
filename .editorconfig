@@ -1,0 +1,19 @@
+# O .editorconfig é uma ferramenta para padronizar a construção do código, ele ajuda muito quando utilizado em equipe
+
+# Define como configuração padrão
+root = true
+
+# O * diz que está configuração é para todos os arquivos
+[*]
+# Define o tipo de indentação
+indent_style = space
+# Define o espaçamento da indentação(nesse caso, 2 espaços)
+indent_size = 2
+# Final de linha
+end_of_line = lf
+# Caracteres da língua portuguesa
+charset = utf-8
+# Faz elementos terem espaçamento evitando ficar um código apertado
+trim_trailing_whitespace = true
+# Insere um linha em branco no final
+insert_final_newline = true

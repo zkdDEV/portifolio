@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    // Recomendando o Prietter
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    // Faz o uso da dependência "npm i --save-dev eslint-plugin-react-hooks"
+    "react-hooks"
+  ],
+  "rules": {
+    // Relata que deve ser um erro caso esteja escrito errado a sintaxe dos hooks
+    "react-hooks/rules-of-hooks": "error",
+    // Em dependências ele vai tratar como um alerta
+    "react-hooks/exhaustive-deps": "warn",
+    // Retirar os tipos, já ques estamos usando o TypeScript
+    "react/prop-types": "off",
+    // Deixa de ser obrigatório adicionar o import do React em todo componente/elemento
+    "react/react-in-jsx-scope": "off",
+    // Não precisa explicitar o que vai retornar de uma função
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  // Informa a versão do react para o ESLint
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+  /*
+    - Para rodar o ESLint, escrevemos o código "npx eslint ." no terminal
+
+    - Caso vá usar o Prettier junto ao ESLint, escreva no terminal
+    "npm i --save-dev eslint-plugin-prettier eslint-config-prettier". São dois
+    plugins para utilizar o  Prettier e ESLint juntos
+  */
+
+}
