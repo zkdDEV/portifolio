@@ -45,6 +45,10 @@
     - Caso vá usar o Prettier junto ao ESLint, escreva no terminal
     "npm i --save-dev eslint-plugin-prettier eslint-config-prettier". São dois
     plugins para utilizar o  Prettier e ESLint juntos
+
+    - Para o prettier já atualizar todos os arquivos que vc deseja, basta
+    escrever isso no terminal: "npx prettier --write ./PastaDesejada/"
+
   */
 
 }
